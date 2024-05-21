@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Hello world</title>
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <div th:text="${msg}"></div>
+    <div th:text="${appconfig.professor}"></div>
+    <div th:text="${appconfig.student}"></div>
+    <div th:text="${appconfig.course}"></div>
 </body>
 </html>
